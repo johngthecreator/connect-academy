@@ -21,7 +21,7 @@ export default function Home() {
       userMessage: userInput
   };
   try {
-    const response = await axios.post("http://localhost:8080/message/review", data)
+    const response = await axios.post("https://connect-academy.onrender.com/message/review", data)
     setLoading(false);
     setResponse(response.data);
   } catch (error) {
