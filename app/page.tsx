@@ -5,7 +5,8 @@ import { bouncy } from 'ldrs'
 
 
 export default function Home() {
-  bouncy.register()
+  // bouncy.register()
+  // <l-bouncy size="45" speed="1.75"  color="white" ></l-bouncy>
 
   const [response, setResponse] = useState<any>();
   const [loading, setLoading] = useState<boolean>(false);
@@ -37,7 +38,7 @@ export default function Home() {
       <form onSubmit={(e)=>{sendData(e)}} className='p-3'>
         <textarea onChange={e=>setUserInput(e.target.value)} className="flex border-solid border-2 p-2 border-gray-300 rounded-lg w-[300px] md:w-[400px] h-[200px] resize-none" maxLength={300} placeholder='Ex: We know each other from...'/> 
         <div className='flex justify-end mt-3'>
-          <button type='submit' className='bg-blue-600 p-2 w-[150px] text-lg font-bold rounded-3xl text-white'>{ loading ? <l-bouncy size="45" speed="1.75"  color="white" ></l-bouncy>:"Send"}</button>
+          <button type='submit' className='bg-blue-600 p-2 w-[150px] text-lg font-bold rounded-3xl text-white'>{ loading ? "Sending..." :"Send"}</button>
         </div>
       </form>
       {response ? (
