@@ -46,7 +46,7 @@ export default function Chat() {
   }
   return (
     <div>
-      <nav className="flex flex-row justify-between items-center p-4 bg-blue-500">
+      <nav className="flex flex-row justify-between items-center p-5 bg-blue-500">
           <h1 className="text-2xl font-bold text-white">Connect Academy</h1>
           <ul>
               <li><button className="p-3 bg-white text-blue-500 rounded-lg font-bold" onClick={()=>{
