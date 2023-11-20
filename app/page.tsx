@@ -10,7 +10,7 @@ export default function Home(){
                 <h2 className="z-10">Your Professional Network.</h2>
             </div>
             <div className="p-10 md:p-24">
-                <div className="flex flex-col md:flex-row text-xl gap-10 items-center">
+                <div className="flex flex-col md:flex-row text-xl gap-20 items-center">
                     <div>
                         <h2 className="text-3xl font-bold mb-3">What is Connect Academy?</h2>
                         <p>
@@ -21,8 +21,10 @@ export default function Home(){
                     </div>
                     <Image src="/Jeff.png" className="rounded-2xl" height={300} width={300} alt="Jeff the Marketer"/>
                 </div>
-                
-
+                <div className="flex flex-col text-xl gap-5 mt-[100px] items-center">
+                        <h2 className="font-bold text-3xl">Try out the Beta!</h2>
+                        <Image src="/connect.png" className="rounded-2xl" height={300} width={300} alt="Jeff the Marketer"/>
+                </div>
             </div>
 
         </div>
