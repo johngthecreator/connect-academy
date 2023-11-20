@@ -25,7 +25,7 @@ export default function Login(){
             const email = user.email;
             const uidToken = await user.getIdToken();
             if (uidToken && email) {
-                axios.post("https://connect-academy.onrender.com/create/user",{
+                axios.post("https://squid-app-jbwa5.ondigitalocean.app/create/user",{
                     userName: name,
                     userEmail: email,
                 }, {headers:{

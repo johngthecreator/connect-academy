@@ -34,7 +34,7 @@ export default function Chat() {
       userMessage: userInput
   };
   try {
-    const response = await axios.post("https://connect-academy.onrender.com/message/review", data,
+    const response = await axios.post("https://squid-app-jbwa5.ondigitalocean.app/message/review", data,
     {headers:{
       'Authorization': `Bearer ${uuid.bblid}`,
       'Host-Email':uuid.email
